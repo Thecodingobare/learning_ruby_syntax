@@ -1,0 +1,76 @@
+data = 
+ name : "Martin Kamau"
+ age : 25,
+ school: "Kenyatta University"
+
+course : Economics
+course : Economics
+course : Economics
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
+course : Economics
+currently_learning: Programming
