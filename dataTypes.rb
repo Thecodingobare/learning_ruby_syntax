@@ -205,3 +205,127 @@ end
 
 princess_peaches_castle()
 #Bowser is trying to kidnap Princess Peach!
+
+#=============================================================================
+#                      Control Flow: Operators                               =
+#                                                                            =
+#=============================================================================
+
+#Comparison Operators
+#In Ruby, many built-in classes have the following methods that can be used to compare two values:
+
+# >: greater than
+# >=: greater than or equal to
+# <: less than
+# <=: less than or equal to
+# ==: equal to
+# !=: not equal to
+
+#Unlike in JavaScript, the == method in Ruby will not coerce strings to numbers before comparing them, or perform some of the other type coercions that JavaScript does. For example, in JavaScript, using the == operator can lead to some strange behavior:
+
+# "1" == 1
+# // => true
+# 0 == []
+# // => true
+# [] == ![]
+# // => true 🤔
+
+#In Ruby, the == method checks if the objects on both sides are considered the equivalent values:
+
+"1" == 1
+# => false
+1 == 1
+# => true
+
+#There are some differences between Ruby's == and JavaScript's === though. In JavaScript, the === operator checks if both objects have the same identity, i.e. refer to the same space in memory. For example, in JavaScript, this example returns false because the two arrays are unique objects in memory:
+
+[1, 2, 3] === [1, 2, 3];
+#// => false
+
+#In Ruby, this example returns true because Ruby considers these to have equivalent values:
+
+[1, 2, 3] == [1, 2, 3]
+# => true
+
+#Ruby will also check if an Integer has the equivalent value to a Float, even though they're technically different data types:
+
+1.0 == 1
+# => true
+
+#Logical Operators
+#Ruby has the same logical operators you'll find in many other languages, including JavaScript:
+
+ #   &&: Logical and. Are both values truthy?
+ #   ||: Logical or. Is one or the other value truthy?
+ #   !: not. Coerces the data to its boolean equivalent, then reverses it (true becomes false, and vice versa).
+
+ true && true
+# => true
+false && false
+# => false
+false && true
+# => false
+true || true
+# => true
+false || false 
+# => false
+false || true
+# => true
+!true
+# false
+!!true
+# true
+
+
+#Ruby also has the ternary operator (?:) for writing an inline conditional statement:
+
+age = 1
+
+age < 2 ? "baby" : "not a baby"
+
+
+
+#Conditional Statements
+
+def to_do(day)
+    if day == "Monday"
+        'Learn'
+    elsif day == "Tuesday"
+        'Continue learing'
+    else day == "Wednesday"
+    end
+end
+
+puts to_do("Monday")
+#Learn
+puts to_do("Tuesday")
+#Continue learning
+
+#Using unless
+
+def clean_dishes(situation)
+    unless situation == "clean"
+        "Clean the house instead"
+    else 
+        "Should clean dishes"
+    end
+end
+
+puts clean_dishes("cleany")
+
+#using case
+#For long conditions
+
+def what_doest(day)
+    case (day)
+    when "Monday"
+        "Go to work"
+    when "Tuesday"
+        "Go play"
+    when "Wednesday"
+        "Rest"
+    else "Party Party"
+    end
+end
+puts what_doest("Monday")
+puts what_doest("Kesho")
