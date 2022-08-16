@@ -184,3 +184,24 @@ my_hash[:key2]
 #Last but not least, you can also use the Hash.new syntax (Links to an external site.), which would create an empty hash, {}:
 Hash.new
 # => {}
+
+#=============================================================================
+#                 VARIABLE TYPES                                             =
+#                                                                            =
+#=============================================================================
+# Local variables: must start with a lowercase letter or an underscore (_): name = "Lucy"
+# Global variables: must start with a dollar sign ($): $name = "Lucy"
+# Instance variables: must start with an at symbol (@) @name = "Lucy")
+# Class variables: must start with two at symbols (@@) (@@name = "Lucy")
+
+#You should almost never need to use global variables in your code. Having a lot of global variables makes your code unpredictable and challenging to debug, so you should reserve them for special cases (like application-wide configuration).
+
+
+$evil_monster = "Bowser"
+
+def princess_peaches_castle
+  puts "#{$evil_monster} is trying to kidnap Princess Peach!"
+end
+
+princess_peaches_castle()
+#Bowser is trying to kidnap Princess Peach!
